@@ -1,0 +1,36 @@
+body {
+    font-family: Arial;
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+}
+
+input, button {
+    padding: 10px;
+    margin: 5px;
+    width: 80%;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+}
+
+.links a {
+    margin: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #007bff;
+}
+
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 80%;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+}

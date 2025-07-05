@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>All Expenses</title>
+    <style>
+        body { font-family: Arial; background: #fff; padding: 20px; }
+        table { width: 100%; border-collapse: collapse; margin-bottom: 20px; }
+        th, td { border: 1px solid #ccc; padding: 10px; text-align: left; }
+        th { background: #f0f0f0; }
+        .totals { font-size: 16px; margin-bottom: 20px; }
+        a { text-decoration: none; color: #007BFF; }
+    </style>
+</head>
+<body>
+    <h2>All Entries</h2>
+
+    <table>
+        <tr>
+            <th>Date</th>
+            <th>Category</th>
+            <th>Amount (₹)</th>
+        </tr>
+        {% for row in expenses %}
+        <tr>
+            <td>{{ row[0] }}</td>
+            <td>{{ row[1] }}</td>
+            <td>{{ row[2] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <div class="totals">
+        <p><strong>Total Income:</strong> ₹{{ income }}</p>
+        <p><strong>Total Expense:</strong> ₹{{ expense }}</p>
+        <p><strong>Balance:</strong> ₹{{ balance }}</p>
+    </div>
+
+    <a href="/">← Back to Home</a>
+</body>
+</html>
+
